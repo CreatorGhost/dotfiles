@@ -37,6 +37,10 @@ packages=(
     "pylint"
     "black"
     "node"
+    "fzf"
+    "zsh-history-substring-search"
+    "maccy"
+    "bat"
 )
 
 # Loop over the array to install each application.
@@ -82,12 +86,16 @@ apps=(
     "visual-studio-code"
     "virtualbox"
     "spotify"
-    "discord"
-    "google-drive"
-    "gimp"
-    "vlc"
+    "numi"
+    "warp"
+    "pycharm-ce"
     "rectangle"
+    "iterm2"
     "postman"
+    "docker"
+    "whatsapp"
+    "raycast"
+    "hiddenbar"
 )
 
 # Loop over the array to install each application.

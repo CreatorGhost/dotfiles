@@ -10,7 +10,7 @@ read
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false && killall Finder
 
 # Get the absolute path to the image
-IMAGE_PATH="${HOME}/dotfiles/settings/Desktop.png"
+IMAGE_PATH="${HOME}/dotfiles/settings/Desktop.jpeg"
 
 # AppleScript command to set the desktop background
 osascript <<EOF
