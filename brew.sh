@@ -33,6 +33,7 @@ packages=(
     "bash"
     "zsh"
     "git"
+    "wget"
     # "tree"
     # "pylint"
     # "black"
@@ -84,9 +85,8 @@ apps=(
     "google-chrome"
     # "firefox"
     # "brave-browser"
-    # "sublime-text"
-    # "visual-studio-code"
-    # "virtualbox"
+    "sublime-text"
+    "visual-studio-code"
     # "spotify"
     # "numi"
     # "warp"
@@ -109,6 +109,18 @@ for app in "${apps[@]}"; do
         brew install --cask "$app"
     fi
 done
+
+# Source zsh-history-substring-search and zsh-syntax-highlighting in .zshrc
+echo "Adding zsh-history-substring-search and zsh-syntax-highlighting to .zshrc"
+
+# Check if the lines already exist to avoid duplicates
+if ! grep -q "zsh-history-substring-search.zsh" ~/.zshrc; then
+    echo "source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" >> ~/.zshrc
+fi
+
+if ! grep -q "zsh-syntax-highlighting.zsh" ~/.zshrc; then
+    echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+fi
 
 # Install Source Code Pro Font
 # Tap the Homebrew font cask repository if not already tapped
