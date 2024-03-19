@@ -25,7 +25,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
-source $ZSH/oh-my-zsh.sh
+
 
 
 # alias python='/usr/bin/python3'
@@ -56,6 +56,7 @@ alias python='python3'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /opt/homebrew /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
