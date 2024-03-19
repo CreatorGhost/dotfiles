@@ -1,48 +1,80 @@
 {
-  "workbench.colorTheme": "Predawn",
-  "workbench.iconTheme": "ayu",
-  "editor.fontFamily": "Source Code Pro",
-  "debug.console.fontFamily": "Source Code Pro",
-  "editor.fontWeight": "500",
-  "terminal.integrated.fontWeight": "600",
-  "editor.fontSize": 16, //Use 22 for Screen Recordings
-  "debug.console.fontSize": 16, //Use 22 for Screen Recordings
-  "terminal.integrated.fontSize": 16, //Use 22 for Screen Recordings
-  "window.zoomLevel": 0, // Use 2 for Screen Recordings
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+  "workbench.colorTheme": "Winter Pearl Theme",
+  "glassit.alpha": 255,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+  "workbench.iconTheme": "material-icon-theme",
+  "cSpell.userWords": [
+    "Cryptocurrency"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "code-runner.runInTerminal": true,
+  "[dart]": {
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "always"
-    }
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
   },
-  "pylint.args": ["--disable=C0114,C0115,C0116"],
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.showExecutionMessage": false,
-  "code-runner.ignoreSelection": true,
-  "code-runner.saveFileBeforeRun": true,
-  "code-runner.executorMap": {
-    "python": "\"$pythonPath\" -u $fullFileName"
+  "git.enableSmartCommit": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[plaintext]": {
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.quickSuggestionsDelay": 100,
-  "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false,
-  "editor.minimap.enabled": false,
-  "workbench.settings.openDefaultSettings": true,
-  "workbench.settings.useSplitJSON": false,
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "newUntitledFile"
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Jedi",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "C_Cpp.updateChannel": "Insiders",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true,
+    "cpp": true,
+    "python": true
+  },
+  "solidity.compileUsingRemoteVersion": "0.6.0",
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "files.maxMemoryForLargeFilesMB": 6096,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "editor.fontSize": 20,
+  "terminal.integrated.fontFamily": "'SourceCodePro+PowerLine+AwesomeRegular'",
+  "editor.fontFamily": "'SourceCodePro+PowerLine+AwesomeRegular'",
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "cursor.cpp.disabledLanguages": [
+    "yaml",
+    "plaintext"
+  ],
+  "workbench.colorCustomizations": {
+  },
+  "files.autoSave": "afterDelay",
+  "json.schemas": [
+    
+  ]
 }
