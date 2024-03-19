@@ -67,10 +67,6 @@
   "editor.fontFamily": "'SourceCodePro+PowerLine+AwesomeRegular'",
   "explorer.confirmDelete": false,
   "git.autofetch": true,
-  "cursor.cpp.disabledLanguages": [
-    "yaml",
-    "plaintext"
-  ],
   "workbench.colorCustomizations": {
   },
   "files.autoSave": "afterDelay",
