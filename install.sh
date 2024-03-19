@@ -32,7 +32,6 @@ done
 # Run VS Code Script
 ./vscode.sh
 
-# Run the Sublime Script
-./sublime.sh
+
 
 echo "Installation Complete!"

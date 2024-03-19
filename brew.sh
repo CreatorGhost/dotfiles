@@ -113,15 +113,29 @@ done
 # Source zsh-history-substring-search and zsh-syntax-highlighting in .zshrc
 echo "Adding zsh-history-substring-search and zsh-syntax-highlighting to .zshrc"
 
-# Check if the lines already exist to avoid duplicates
+# Check if zsh-autosuggestions is already sourced in .zshrc and append if not
+if ! grep -q "zsh-autosuggestions.zsh" ~/.zshrc; then
+    echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+    echo "zsh-autosuggestions sourced in .zshrc"
+else
+    echo "zsh-autosuggestions is already sourced in .zshrc"
+fi
+
+# Check if zsh-history-substring-search is already sourced in .zshrc and append if not
 if ! grep -q "zsh-history-substring-search.zsh" ~/.zshrc; then
     echo "source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" >> ~/.zshrc
+    echo "zsh-history-substring-search sourced in .zshrc"
+else
+    echo "zsh-history-substring-search is already sourced in .zshrc"
 fi
 
+# Check if zsh-syntax-highlighting is already sourced in .zshrc and append if not
 if ! grep -q "zsh-syntax-highlighting.zsh" ~/.zshrc; then
     echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+    echo "zsh-syntax-highlighting sourced in .zshrc"
+else
+    echo "zsh-syntax-highlighting is already sourced in .zshrc"
 fi
-
 # Install Source Code Pro Font
 # Tap the Homebrew font cask repository if not already tapped
 brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
