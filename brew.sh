@@ -27,6 +27,27 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
+
+# Installing Oh My Zsh
+echo "Installing Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# Installing powerLevel 10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+# Ensure ZSH_THEME is set to "powerlevel10k/powerlevel10k" without duplication or conflicting theme settings
+if grep -q 'ZSH_THEME=' ~/.zshrc; then
+    # If ZSH_THEME is already set, replace it
+    sed -i '' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
+else
+    # If ZSH_THEME is not set, add it
+    echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> ~/.zshrc
+fi
+
+
+
+
 # Define an array of packages to install using Homebrew.
 packages=(
     "python"
