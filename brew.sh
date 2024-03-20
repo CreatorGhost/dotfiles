@@ -30,10 +30,15 @@ brew cleanup
 
 # Installing Oh My Zsh
 echo "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Installing powerLevel 10k
+# Set ZSH_CUSTOM if not already set
+if [ -z "$ZSH_CUSTOM" ]; then
+    ZSH_CUSTOM="${ZSH:-$HOME/.oh-my-zsh}/custom"
+fi
+
+echo "Cloning Powerlevel10k theme into $ZSH_CUSTOM/themes/powerlevel10k"
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 # Ensure ZSH_THEME is set to "powerlevel10k/powerlevel10k" without duplication or conflicting theme settings
