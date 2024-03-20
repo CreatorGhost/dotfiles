@@ -63,10 +63,14 @@
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "terminal.integrated.sendKeybindingsToShell": true,
   "editor.fontSize": 20,
-  "terminal.integrated.fontFamily": "'MesloLGS NF'",
-  "editor.fontFamily": "'MesloLGS NF'",
+  "terminal.integrated.fontFamily": "'SourceCodePro+PowerLine+AwesomeRegular'",
+  "editor.fontFamily": "'SourceCodePro+PowerLine+AwesomeRegular'",
   "explorer.confirmDelete": false,
   "git.autofetch": true,
+  "cursor.cpp.disabledLanguages": [
+    "yaml",
+    "plaintext"
+  ],
   "workbench.colorCustomizations": {
   },
   "files.autoSave": "afterDelay",
