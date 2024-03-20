@@ -32,6 +32,11 @@ done
 # Run VS Code Script
 ./vscode.sh
 
+curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors
+echo "To import the iTerm2 theme, go to iTerm2 -> Preferences -> Profiles -> Colors Tab -> Color Presets... -> Import... and select '~/Downloads/coolnight.itermcolors'"
 
 
 echo "Installation Complete!"
+
+
+echo "Open terminal and run 'p10k configure' to configure the powerlevel10k theme"

@@ -118,7 +118,7 @@ apps=(
     # "warp"
     # "pycharm-ce"
     # "rectangle"
-    # "iterm2"
+    "iterm2"
     # "postman"
     # "docker"
     "whatsapp"
